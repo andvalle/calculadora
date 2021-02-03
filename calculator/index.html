@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <form class="calculator" name= "calc">
+        <input class="valor" type="text" name="tela" readonly="">
+
+        <span class="num clear" onclick="document.calc.tela.value=''">c</span>
+        <span class="num" onclick="document.calc.tela.value+='/'">/</span>
+        <span class="num" onclick="document.calc.tela.value+='*'">*</span>
+
+        <span class="num" onclick="document.calc.tela.value+='7'">7</span>
+        <span class="num" onclick="document.calc.tela.value+='8'">8</span>
+        <span class="num" onclick="document.calc.tela.value+='9'">9</span>
+
+        <span class="num" onclick="document.calc.tela.value+='-'">-</span>
+
+        <span class="num" onclick="document.calc.tela.value+='4'">4</span>
+        <span class="num" onclick="document.calc.tela.value+='5'">5</span>
+        <span class="num" onclick="document.calc.tela.value+='6'">6</span>
+
+        <span class="num plus" onclick="document.calc.tela.value+='+'">+</span>
+
+        <span class="num" onclick="document.calc.tela.value+='3'">3</span>
+        <span class="num" onclick="document.calc.tela.value+='2'">2</span>
+        <span class="num" onclick="document.calc.tela.value+='1'">1</span>
+
+        <span class="num" onclick="document.calc.tela.value+='0'">0</span>
+        <span class="num" onclick="document.calc.tela.value+='00'">00</span>
+
+        <span class="num" onclick="document.calc.tela.value+='.'">.</span>
+        <span class="num igual" onclick="document.calc.tela.value=eval(calc.tela.value)">=</span>
+       
+
+    </form>
+    
+</body>
+</html>
